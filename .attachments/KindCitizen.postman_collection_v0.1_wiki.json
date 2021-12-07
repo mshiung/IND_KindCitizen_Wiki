@@ -1,0 +1,511 @@
+{
+	"info": {
+		"_postman_id": "d4944717-c97b-48e6-9cfb-f428b991da6e",
+		"name": "KindCitizen",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "KCAPI_GETs",
+			"item": [
+				{
+					"name": "KC-getProductDetails",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"id\": \"6629592268961\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://kindcitizen.myshopify.com/apps/kcapi/getProductDetails",
+							"protocol": "https",
+							"host": [
+								"kindcitizen",
+								"myshopify",
+								"com"
+							],
+							"path": [
+								"apps",
+								"kcapi",
+								"getProductDetails"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "KC-getAllMerchants",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://kindcitizen.myshopify.com/apps/kcapi/getAllMerchants",
+							"protocol": "https",
+							"host": [
+								"kindcitizen",
+								"myshopify",
+								"com"
+							],
+							"path": [
+								"apps",
+								"kcapi",
+								"getAllMerchants"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "KC-getProductsByMerchant",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"merchant_id\": \"271201763489\",\r\n    \"status\": \"ad\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://kindcitizen.myshopify.com/apps/kcapi/getProductsByMerchant",
+							"protocol": "https",
+							"host": [
+								"kindcitizen",
+								"myshopify",
+								"com"
+							],
+							"path": [
+								"apps",
+								"kcapi",
+								"getProductsByMerchant"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "KC-getProductCategoryOptions",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://kindcitizen.myshopify.com/apps/kcapi/getProductCategoryOptions",
+							"protocol": "https",
+							"host": [
+								"kindcitizen",
+								"myshopify",
+								"com"
+							],
+							"path": [
+								"apps",
+								"kcapi",
+								"getProductCategoryOptions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "KC-getProductPromotionOptions",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://kindcitizen.myshopify.com/apps/kcapi/getProductPromotionOptions",
+							"protocol": "https",
+							"host": [
+								"kindcitizen",
+								"myshopify",
+								"com"
+							],
+							"path": [
+								"apps",
+								"kcapi",
+								"getProductPromotionOptions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "KC-getFoodProductsByCategory",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"foodCategory\": [\"rice\", \"vegan\", \"noodles\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://kindcitizen.myshopify.com/apps/kcapi/getFoodProductsByCategory",
+							"protocol": "https",
+							"host": [
+								"kindcitizen",
+								"myshopify",
+								"com"
+							],
+							"path": [
+								"apps",
+								"kcapi",
+								"getFoodProductsByCategory"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "KC-getMerchantsWithPromotions",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"contributor_id\": \"123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://kindcitizen.myshopify.com/apps/kcapi/getMerchantsWithPromotions",
+							"protocol": "https",
+							"host": [
+								"kindcitizen",
+								"myshopify",
+								"com"
+							],
+							"path": [
+								"apps",
+								"kcapi",
+								"getMerchantsWithPromotions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "KC-getMerchantProfile_NEW",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"merchantId\": \"270735048865\",\r\n   \"syncGoogle\": \"on\",\r\n   \"googlePlaceId\": \"ChIJnSSwZOsW2jER1A9TD2zpXFE\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://kindcitizen.myshopify.com/apps/kcapi/getMerchantProfile",
+							"protocol": "https",
+							"host": [
+								"kindcitizen",
+								"myshopify",
+								"com"
+							],
+							"path": [
+								"apps",
+								"kcapi",
+								"getMerchantProfile"
+							]
+						},
+						"description": "//\"syncGoogle\": \"none\"/\"on\"/\"off\"\r\n\r\n{\r\n   \"merchantId\": \"270735048865\",\r\n   \"syncGoogle\": \"on\",\r\n   \"googlePlaceId\": \"ChIJnSSwZOsW2jER1A9TD2zpXFE\"\r\n}"
+					},
+					"response": []
+				},
+				{
+					"name": "KC-getOrders",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"merchantId\": \"271201763489\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://kindcitizen.myshopify.com/apps/kcapi/getOrders",
+							"protocol": "https",
+							"host": [
+								"kindcitizen",
+								"myshopify",
+								"com"
+							],
+							"path": [
+								"apps",
+								"kcapi",
+								"getOrders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "KC-getMerchantsNew",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://kindcitizen.myshopify.com/apps/kcapi/getMerchantsNew",
+							"protocol": "https",
+							"host": [
+								"kindcitizen",
+								"myshopify",
+								"com"
+							],
+							"path": [
+								"apps",
+								"kcapi",
+								"getMerchantsNew"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "KC-getClaimProductsTopDemand",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://kindcitizen.myshopify.com/apps/kcapi/getClaimProductsTopDemand",
+							"protocol": "https",
+							"host": [
+								"kindcitizen",
+								"myshopify",
+								"com"
+							],
+							"path": [
+								"apps",
+								"kcapi",
+								"getClaimProductsTopDemand"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "KC-getDateTimeDisplay",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"timestamp\": 1618467994\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://kindcitizen.myshopify.com/apps/kcapi/getDateTimeDisplay",
+							"protocol": "https",
+							"host": [
+								"kindcitizen",
+								"myshopify",
+								"com"
+							],
+							"path": [
+								"apps",
+								"kcapi",
+								"getDateTimeDisplay"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "KC-getOrderByQRCode",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"qr_code\": \"20210415100103_6629592268961_1001_1618467994\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://kindcitizen.myshopify.com/apps/kcapi/getOrderByQRCode",
+							"protocol": "https",
+							"host": [
+								"kindcitizen",
+								"myshopify",
+								"com"
+							],
+							"path": [
+								"apps",
+								"kcapi",
+								"getOrderByQRCode"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "KC-getBeneficiaryTokenBalance",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \r\n    \"beneficiary_id\": \"5115527102625\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://kindcitizen.myshopify.com/apps/kcapi/getBeneficiaryTokenBalance",
+							"protocol": "https",
+							"host": [
+								"kindcitizen",
+								"myshopify",
+								"com"
+							],
+							"path": [
+								"apps",
+								"kcapi",
+								"getBeneficiaryTokenBalance"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "KC-getBeneficiaryProfile",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \r\n    \"beneficiaryId\": \"5115527102625\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://kindcitizen.myshopify.com/apps/kcapi/getBeneficiaryProfile",
+							"protocol": "https",
+							"host": [
+								"kindcitizen",
+								"myshopify",
+								"com"
+							],
+							"path": [
+								"apps",
+								"kcapi",
+								"getBeneficiaryProfile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "KC-getGooglePlaceDetails",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \r\n    \"googlePlaceId\": \"ChIJuQv1boMZ2jEREqoyUkzXc44\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://kindcitizen.myshopify.com/apps/kcapi/getGooglePlaceDetails",
+							"protocol": "https",
+							"host": [
+								"kindcitizen",
+								"myshopify",
+								"com"
+							],
+							"path": [
+								"apps",
+								"kcapi",
+								"getGooglePlaceDetails"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
